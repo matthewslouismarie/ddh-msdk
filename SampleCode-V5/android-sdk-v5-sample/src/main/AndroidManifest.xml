@@ -80,7 +80,7 @@
                 android:resource="@xml/accessory_filter" />
         </activity>
 
-        <activity android:name="dji.v5.ux.sample.showcase.defaultlayout.DefaultLayoutActivity"
+        <activity android:name=".HomeActivity"
             android:theme="@style/full_screen_theme"
             android:screenOrientation="landscape"
             android:configChanges="orientation|screenSize|keyboardHidden"

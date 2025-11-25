@@ -117,8 +117,8 @@ abstract class DJIMainActivity : AppCompatActivity() {
             binding.textCoreInfo.text = it.coreInfo.toString()
         }
 
-        binding.iconSdkForum.setOnClickListener {
-            Helper.startBrowser(this, StringUtils.getResStr(R.string.sdk_forum_url))
+        binding.iconDvhWebsite.setOnClickListener {
+            Helper.startBrowser(this, StringUtils.getResStr(R.string.dvh_website_url))
         }
 
         binding.iconReleaseNode.setOnClickListener {

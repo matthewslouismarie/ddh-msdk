@@ -231,33 +231,22 @@
         app:layout_constraintStart_toStartOf="@+id/msg_panel">
 
         <ImageView
-            android:id="@+id/icon_sdk_forum"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:elevation="10dp"
-            android:foreground="?selectableItemBackground"
+            android:id="@+id/icon_dvh_website"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/dvh_logo_white"
+            android:contentDescription="@string/dvh_website_desc"
             android:scaleType="centerInside"
-            android:src="@drawable/msg_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="H,1:1"
-            app:layout_constraintEnd_toStartOf="@+id/guide_1"
-            app:layout_constraintHeight_percent="0.65"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:foreground="?selectableItemBackground"
+            android:elevation="8dp"
             android:gravity="top|center"
-            android:text="@string/sdk_forum"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toStartOf="@+id/guide_1"
+
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/icon_sdk_forum" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guide_1"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.15"
+            />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guide_1"
@@ -274,13 +263,12 @@
             android:src="@drawable/release_icon"
             android:elevation="10dp"
             android:foreground="?selectableItemBackground"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="H,1:1"
-            app:layout_constraintEnd_toStartOf="@+id/guide_2"
             app:layout_constraintHeight_percent="0.65"
             app:layout_constraintStart_toEndOf="@+id/guide_1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0"
+            app:layout_constraintEnd_toStartOf="@+id/guide_2"
+            app:layout_constraintTop_toTopOf="@id/icon_dvh_website"
+            app:layout_constraintBottom_toBottomOf="@id/icon_dvh_website"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -309,13 +297,12 @@
             android:src="@drawable/tec_support_icon"
             android:elevation="10dp"
             android:foreground="?selectableItemBackground"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/icon_dvh_website"
             app:layout_constraintDimensionRatio="H,1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.65"
             app:layout_constraintStart_toEndOf="@+id/guide_2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0"
+            app:layout_constraintTop_toTopOf="@id/icon_dvh_website"
             tools:ignore="ContentDescription" />
 
         <TextView

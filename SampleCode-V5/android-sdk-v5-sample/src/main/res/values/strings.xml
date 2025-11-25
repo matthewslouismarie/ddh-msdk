@@ -7,7 +7,8 @@
 
 More refer to the release notes." </string>
     <string name="news_date">2023–5–18</string>
-    <string name="sdk_forum_url">https://sdk-forum.dji.net/hc/en-us/community/topics</string>
+    <string name="dvh_website_url">https://davincihive.fr</string>
+    <string name="dvh_website_desc">DaVinciHive\'s website</string>
     <string name="release_node_url">https://developer.dji.com/doc/mobile-sdk-tutorial/en/</string>
     <string name="tech_support_url">https://sdk-forum.dji.net/hc/en-us/requests/new</string>
 

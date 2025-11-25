@@ -7,7 +7,8 @@
 更多功能查看发布日志。"</string>
     <string name="news_date">2023–5–18</string>
 
-    <string name="sdk_forum_url">https://sdk-forum.dji.net/hc/zh-cn/community/topics</string>
+    <string name="dvh_website_url">https://davincihive.fr/en</string>
+    <string name="dvh_website_desc">DaVinciHive\'s website</string>
     <string name="release_node_url">https://developer.dji.com/doc/mobile-sdk-tutorial/cn/</string>
     <string name="tech_support_url">https://sdk-forum.dji.net/hc/zh-cn/requests/new</string>
 
