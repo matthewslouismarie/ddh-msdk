@@ -239,7 +239,6 @@ public class DefaultLayoutActivity extends AppCompatActivity {
         mapWidget.onDestroy();
         MediaDataCenter.getInstance().getCameraStreamManager().removeAvailableCameraUpdatedListener(availableCameraUpdatedListener);
         DJINetworkManager.getInstance().removeNetworkStatusListener(networkStatusListener);
-
     }
 
     @Override
@@ -396,10 +395,10 @@ public class DefaultLayoutActivity extends AppCompatActivity {
     }
 
     private void updateViewVisibility(ComponentIndexType devicePosition, CameraLensType lensType) {
-        //只在fpv下显示
+        //Only shows under fpv
         pfvFlightDisplayWidget.setVisibility(CameraUtil.isFPVTypeView(devicePosition) ? View.VISIBLE : View.INVISIBLE);
 
-        //fpv下不显示
+        //fpv It is not shown
         lensControlWidget.setVisibility(CameraUtil.isFPVTypeView(devicePosition) ? View.INVISIBLE : View.VISIBLE);
         ndviCameraPanel.setVisibility(CameraUtil.isFPVTypeView(devicePosition) ? View.INVISIBLE : View.VISIBLE);
         visualCameraPanel.setVisibility(CameraUtil.isFPVTypeView(devicePosition) ? View.INVISIBLE : View.VISIBLE);
@@ -410,7 +409,7 @@ public class DefaultLayoutActivity extends AppCompatActivity {
         focalZoomWidget.setVisibility(CameraUtil.isFPVTypeView(devicePosition) ? View.INVISIBLE : View.VISIBLE);
         horizontalSituationIndicatorWidget.setSimpleModeEnable(CameraUtil.isFPVTypeView(devicePosition));
 
-        //只在部分len下显示
+        //Shows only under partial lens
         ndviCameraPanel.setVisibility(CameraUtil.isSupportForNDVI(lensType) ? View.VISIBLE : View.INVISIBLE);
     }
 

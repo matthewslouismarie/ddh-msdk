@@ -70,8 +70,8 @@ abstract class DJIMainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 有一些手机从系统桌面进入的时候可能会重启main类型的activity
-        // 需要校验这种情况，业界标准做法，基本所有app都需要这个
+        // Some phones may restart main type activities when entering from the system desktop
+        // This situation needs to be verified, the standard practice in the industry, and basically all apps need this
         if (!isTaskRoot && intent.hasCategory(Intent.CATEGORY_LAUNCHER) && Intent.ACTION_MAIN == intent.action) {
 
                 finish()

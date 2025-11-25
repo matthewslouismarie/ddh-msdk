@@ -49,7 +49,7 @@ open class PrimaryFlightDisplayWidget @JvmOverloads constructor(
         setVideoViewSize(1440, 1080)
     }
 
-    //可以通过fpvWidget获取真实的video长宽比
+    //You can get the real video aspect ratio through fpvWidget
     private fun setVideoViewSize(videoViewWidth: Int, videoViewHeight: Int) {
         binding.fpvAttitude.setVideoViewSize(videoViewWidth, videoViewHeight)
     }
